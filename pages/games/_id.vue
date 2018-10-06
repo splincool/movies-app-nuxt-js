@@ -37,16 +37,16 @@
       <div class="w-full md:w-3/4 md:ml-12 py-8 leading-normal">
         <p class="mb-12">{{ game.summary }}</p>
 
-        <div class="flex flex-wrap -mx-4">
-          <a href="#" v-for="screenshot in game.screenshots" :key="screenshot.cloudinary_id" class="w-full md:w-1/4 px-4 mb-12 no-underline">
-            <img :src="screenshot.url.replace('t_thumb', 't_screenshot_med')" alt="screenshot">
-          </a>
-        </div>
+      <div class="flex flex-wrap -mx-4">
+        <a href="#" v-for="screenshot in game.screenshots" :key="screenshot.cloudinary_id" class="w-full md:w-1/4 px-4 mb-12 no-underline">
+          <img :src="screenshot.url.replace('t_thumb', 't_screenshot_med')" alt="screenshot">
+        </a>
+      </div>
 
       </div>
     </div>
   </div>
-  
+
 </template>
 
 <script>
