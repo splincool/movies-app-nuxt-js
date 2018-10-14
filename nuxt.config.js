@@ -1,11 +1,5 @@
 const pkg = require('./package')
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/projects/movies-app'
-  }
-} : {}
-
 module.exports = {
   mode: 'universal',
 
@@ -25,11 +19,6 @@ module.exports = {
     ]
   },
 
-  router: {
-    router: {
-      base: '/projects/movies-app'
-    }
-  },
   /*
   ** Customize the progress-bar color
   */
